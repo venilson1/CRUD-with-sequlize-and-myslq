@@ -19,11 +19,15 @@ $ npm install --save nodemon -D
 
 ### Desenvolvimento
 
-Um dos grandes desafios neste projeto foi utilizar a arquitetura MVC, com o Model e o Controller. Neste padrão senti um pouco de dificuldade com importação e exportação de arquivos, mas no final, foi gratificante ver o resultado. Mas o que chama atenção é o Sequelize para realizar as operações do CRUD.
+CRUD COM SEQUELIZE E MYSQL
 
-Para realizar as operações de INSERT, importei o model que possui o Schema do BD e apliquei o método CREATE, passando como parâmetro a variável que armazena o dado que é enviado pelo input do html, já para realizar as operação GET, utilizei o método findAll( ) e passei como parâmetro a ordem para ser exibidos: "{ order: [['id', 'DESC']] }", assim ele se referencia pelo id e exibe de forma decrescente.
 
-O DELETE e UPDATE usa como parâmetro o id que é enviado do front e caso o dado seja igual ao do Schema, ele deleta ou atualiza a lista de itens.
+
+Um dos grandes desafios neste projeto foi utilizar a arquitetura MVC, Model e Controller para ser mais especifico. Neste padrão senti um pouco de dificuldade com importação e exportação de arquivos, mas no final, foi gratificante ver o resultado. O que chama atenção mesmo  é a linguagem simples do Sequelize para realizar as operações do CRUD.
+
+ Para realizar as operações de INSERT, importei o model que possui a estrutura do Schema definido e apliquei o método CREATE( ), passando como parâmetro a variável que armazena o dado que é enviado pelo input do html, já para realizar a operação GET, utilizei o método findAll( ) e passei como parâmetro a ordem para ser exibidos de forma decrescente pegando como referência o id: "{ order: [['id', 'DESC']] }".
+
+ O DELETE e UPDATE usa como parâmetro o id que é enviado do front e caso o dado seja igual ao do Schema, ele deleta ou atualiza a lista de itens.
 
 
 
