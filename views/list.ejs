@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=f, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css"
+    integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <p class="d-flex justify-content-center pt-4"><a class="btn btn-lg btn-warning" href="/">voltar</a></p>
+
+  <% names.forEach(name => { %>
+  <br>
+  <div class="card-body bg-secondary w-25 m-auto">
+    <p class="text-center h4 mb-4"><%= name.name %></p>
+    <div class=" d-flex justify-content-around bg-dark py-2">
+      
+      <a 
+        href="list/edit/<%= name.id %>" 
+        class="btn btn-small btn-warning"> 
+        atualizar
+      </a>
+
+      <form method="POST" action="/list/delete">
+        <input type="hidden" name="id" value="<%= name.id %>">
+        <button class="btn btn-small btn-danger">excluir</button>
+      </form>
+
+    </div>
+   
+    
+  </div>
+  <% }) %>
+
+
+</body>
+
+</html>
