@@ -7,9 +7,7 @@ projeto desenvolvido por mim durante os estudos da formação NodeJs do Guia do 
 Requer o [Node.js](https://nodejs.org/) v12.13.0+ para executar.
 
 
-Instale as dependências e devDependencies e inicie o servidor com ```sh
-npm start
-```
+Instale as dependências e devDependencies e inicie o servidor com npm start
 
 ```sh
 $ npm install --save express
