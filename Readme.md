@@ -28,6 +28,8 @@ Um dos grandes desafios neste projeto foi utilizar a arquitetura MVC, Model e Co
  Para realizar as operações de INSERT, importei o model que possui a estrutura do Schema definido e apliquei o método CREATE( ), passando como parâmetro a variável que armazena o dado que é enviado pelo input do html, já para realizar a operação GET, utilizei o método findAll( ) e passei como parâmetro a ordem para ser exibidos de forma decrescente pegando como referência o id: "{ order: [['id', 'DESC']] }".
 
  O DELETE e UPDATE usa como parâmetro o id que é enviado do front e caso o dado seja igual ao do Schema, ele deleta ou atualiza a lista de itens.
+ 
+ ![video](https://user-images.githubusercontent.com/57969262/95195453-eef90a80-07ac-11eb-9ab0-f40157d5cecd.gif)
 
 
 
